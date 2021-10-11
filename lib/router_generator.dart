@@ -18,10 +18,10 @@ class RouteGenerator {
         return _getPageRoute(const SplashScreen());
 
       case loginRoute:
-        return _getPageRoute(const LoginScreen());
+        return _getPageRoute(LoginScreen());
 
       case signupRoute:
-        return _getPageRoute(const SignupScreen());
+        return _getPageRoute(SignupScreen());
 
       default:
         return _errorRoute();
