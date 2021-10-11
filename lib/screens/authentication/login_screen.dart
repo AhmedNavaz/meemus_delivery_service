@@ -23,9 +23,9 @@ class _LoginScreenState extends State<LoginScreen> {
   void _submitForm() {
     final isValid = _formKey.currentState!.validate();
     FocusScope.of(context).unfocus();
-
     if (isValid) {
       _formKey.currentState!.save();
+      navigationController.getOffAll(homeRoute);
     }
   }
 
@@ -125,8 +125,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                     vertical: 6, horizontal: 10),
                                 child: TextFormField(
                                   validator: (value) {
-                                    if (value!.isEmpty || value.length <= 8) {
-                                      return 'Please enter your password';
+                                    if (value!.isEmpty || value.length <= 6) {
+                                      return 'Password must be atleast 6 characters';
                                     } else {
                                       return null;
                                     }
