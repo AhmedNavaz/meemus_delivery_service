@@ -103,7 +103,7 @@ class _SignupScreenState extends State<SignupScreen> {
                                   controller: nameController,
                                   cursorColor: Colors.pink.shade400,
                                   decoration: InputDecoration(
-                                    hintText: 'Enter Your Email',
+                                    hintText: 'Enter Your Name',
                                     hintStyle: TextStyle(
                                       color: Colors.grey.shade600,
                                     ),
